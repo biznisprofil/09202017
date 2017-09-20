@@ -1,0 +1,141 @@
+html {
+    background-image: url("../images/black-paper-texture.png"), url("../images/Rectangle 1 copy 2.png");
+    background-position: left top, center top;
+    background-repeat: no-repeat;
+}
+
+body {
+    max-width: 80rem; margin: 0 auto;
+    background: transparent;
+    color: #fff;
+}
+
+/* header */
+
+header {
+    zoom: 60%;
+}
+
+.header-left {
+    padding: 40px;
+}
+
+.header-center {
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+
+.header-right {
+    text-align: right;
+    padding-right: 65px;
+}
+
+.header-tools {
+    display: none;
+}
+
+.header-images {
+    display: inline-block;
+}
+
+.header-images img {
+    margin: 15px 10px -30px 10px;
+}
+
+.nav-link {
+    color: #fff!important;
+}
+
+
+/* navigation */
+.custom-nav {
+    background-color: 	#D71D2A!important;
+    padding: 0;
+}
+
+.custom-dropdown {
+    background-color: 	#D71D2A!important;
+}
+
+.custom-dropdown a {
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+    color: white;
+}
+
+.custom-dropdown a:last-child {border-bottom: none;}
+
+nav ul li {
+    border-right: 1px solid rgba(0,0,0,0.6);
+}
+
+nav ul li:last-child {border-right: none;}
+
+.nav-item-orange {
+    background-color: 	#FA7C0C!important;
+}
+
+/* main */
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+.register-social img {
+    margin: 5px;
+}
+
+.form-birthday {
+    margin-bottom: -15px;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: rgba(87, 86, 86, 0.6);
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding: .75rem 0;
+    font-size: .9rem;
+}
+
+/* medium */
+@media only screen and (min-width: 35rem) {
+    header {
+        zoom: 75%;
+        padding: 5px;
+    }
+    .header-center {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+    .header-tools {
+        display: none;
+    }
+} 
+
+/* large */
+@media only screen and (min-width: 60rem) {
+    header {
+        zoom: 100%;
+        padding: 5px;
+    }
+    .header-center {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+    .header-tools {
+        display: block;
+    }
+    .nav-tools {
+        display: none;
+    }
+}

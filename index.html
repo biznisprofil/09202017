@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Saint</title>
+    <title>The Saint - Registracija</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -84,9 +84,10 @@
         </div>
     </nav>
 
+    <!-- na svakoj sledećoj strani se menja samo main -->
     <main class="row">
         <section class="col-sm-6">
-            <p>Registracija</p>
+            <label>Registracija</label>
             <figure class="register-social">
                 <img src="./images/Registruj-se-preko-facebooka.png" alt="">
                 <img src="./images/reg-preko-g+.png" alt="">
@@ -95,50 +96,61 @@
             <form class="row">
                 <div class="form-group col-sm-6">
                     <label for="name">Ime i prezime:</label>
-                    <input type="text" class="form-control" placeholder="Ime" name="name">
+                    <input type="text" class="form-control rounded-input" placeholder="Ime" name="name">
 
                     <label for="birthday">Rođendan:</label>
                     <div class="row form-birthday">
                         <div class="form-group col-sm-4">
-                            <input type="text" class="form-control" placeholder="Dan" name="day">
+                            <input type="text" class="form-control rounded-input" placeholder="Dan" name="day">
                         </div>
                         <div class="form-group col-sm-4">
-                            <input type="text" class="form-control" placeholder="Mesec" name="month">
+                            <input type="text" class="form-control rounded-input" placeholder="Mesec" name="month">
                         </div>
                         <div class="form-group col-sm-4">
-                            <input type="text" class="form-control" placeholder="Godina" name="year">
+                            <input type="text" class="form-control rounded-input" placeholder="Godina" name="year">
                         </div>
                     </div>
 
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" placeholder="username@example.com" name="email">
+                    <input type="email" class="form-control rounded-input" placeholder="username@example.com" name="email">
 
-                    <label for="pwd">Šifra:</label>
-                    <input type="password" class="form-control" placeholder="Sifra" name="pwd">
+                    <label for="pwd">Sifra:</label>
+                    <input type="password" class="form-control rounded-input" placeholder="Sifra" name="pwd">
                 </div>
 
                 <div class="form-group col-sm-6">
 
                     <label for="lastname">Prezime :</label>
-                    <input type="text" class="form-control" placeholder="Prezime" name="lastname">
+                    <input type="text" class="form-control rounded-input" placeholder="Prezime" name="lastname">
 
                     <label for="phone">Telefon:</label>
-                    <input type="text" class="form-control" placeholder="Telefon" name="phone">
+                    <input type="text" class="form-control rounded-input" placeholder="Telefon" name="phone">
 
                     <label for="emailconfirm">Potvrda emaila:</label>
-                    <input type="email" class="form-control" placeholder="username@example.com" name="emailconfirm">
+                    <input type="email" class="form-control rounded-input" placeholder="username@example.com" name="emailconfirm">
 
-                    <label for="pwdconfirm">Potvrda Šifre:</label>
-                    <input type="password" class="form-control" placeholder="Enter password" name="pwdconfirm">
+                    <label for="pwdconfirm">Potvrda Sifre:</label>
+                    <input type="password" class="form-control rounded-input" placeholder="Enter password" name="pwdconfirm">
 
                 </div>
 
                 <div class="submit-section">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-
+                    <figure class="float-right">
                         <img src="./images/Napravi-nalog.png" alt="">
+                    </figure>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.
                     </p>
+                    <hr class="horizontal-line">
+                    <span>
+                        Novosti iz Sainta: 
+                    </span>
+                    <div class="float-right">
+                        <input type="checkbox" name="checkboxG5" id="checkboxG5" class="css-checkbox" checked="checked" />
+                        <label for="checkboxG5" class="css-label"></label>
+                    </div>
+                </div>
+
                 </div>
             </form>
         </section>
@@ -148,9 +160,52 @@
             </figure>
         </section>
     </main>
+    <!-- na svakoj sledećoj strani se menja samo main -->
+
+
+    <section class="wide-footer">
+        <div class="row wraper">
+            <figure class="col-sm-2">
+                <img src="./images/Vector Smart Object copy.png" alt="pizza">
+            </figure>
+            <article class="col-sm-4">
+                <h3>NAJCESCA PITANJA</h3>
+                <ul class="questions">
+                    <li><a href="">Da li isporucujete i u moje mesto?</a></li>
+                    <li><a href="">Kako naruciti?</a></li>
+                    <li><a href="">Kada ce mi porudzbina biti isporucena?</a></li>
+                    <li><a href="">Kako se placa?</a></li>
+                </ul>
+            </article>
+            <article class="col-sm-3">
+                <h3>THE SAINT</h3>
+                <ul class="links">
+                    <li><a href="">Lokacije</a></li>
+                    <li><a href="">O nama</a></li>
+                    <li><a href="">Posao</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+                </a>
+            </article>
+            <article class="col-sm-3">
+                <h3>DOSTAVA</h3>
+                <p class="italic">Prilikom dostave placanje je moguce debitnim karticama:</p>
+                <img src="./images/MasterCard.png" alt="">
+                <img src="./images/Maestro.png" alt="">
+                <img src="./images/Visa.png" alt="">
+            </article>
+        </div>
+    </section>
 
     <footer>
-        <p>Copyright &copy; 2017 The Saint</p>
+        <section class="wraper">
+            <figure class="float-right">
+                <img src="./images/footer-facebook.png" alt="">
+                <img src="./images/footer-instagram.png" alt="">
+                <img src="./images/footer-email.png" alt="">
+            </figure>
+            <p>Copyright &copy; 2017 The Saint</p>
+        </section>
     </footer>
 
     <script src="./js/jquery-3.2.1.slim.min.js"></script>

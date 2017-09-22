@@ -1,14 +1,85 @@
+/* fonts */
+@font-face {
+    font-family: "CFJacquesParizeau Regular";
+    src: url("fonts/cfjacquesparizeau-regular-webfont.woff");
+    src: local("☺"),
+      url("fonts/cfjacquesparizeau-regular-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Exo 2 Medium";
+    src: url("fonts/exo2-medium-webfont.woff");
+    src: local("☺"),
+      url("fonts/exo2-medium-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Exo 2 Bold";
+    src: url("fonts/exo2-bold-webfont.woff");
+    src: local("☺"),
+      url("fonts/exo2-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo 2 Semibold";
+    src: url("fonts/exo2-semibold-webfont.woff");
+    src: local("☺"),
+      url("fonts/exo2-semibold-webfont.woff") format("woff");
+}
+
+label {
+    font-family: "Exo 2 Medium", sans-serif;
+    color: lightgrey;
+}
+
+h3 {
+    font-family: 'Exo 2 Bold', sans-serif;
+}
+
+ul.links li a {
+    font-family: "Exo 2 Medium", sans-serif;
+    font-style: italic;
+    color: lightgray;
+}
+
+ul.questions li a {
+    font-family: 'Exo 2 Medium', sans-serif;
+    color: lightgray;
+}
+
+a .nav-link {
+    font-family: 'Exo 2 Semibold', sans-serif;
+}
+
+.italic {
+    font-family: 'Exo 2 Medium', serif;
+    font-style: italic;
+    color: lightgray;
+}
+
+/* end - fonts */
+
+/* global */
+
 html {
     background-image: url("../images/black-paper-texture.png"), url("../images/Rectangle 1 copy 2.png");
     background-position: left top, center top;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 body {
-    max-width: 80rem; margin: 0 auto;
+    font-family: 'Exo 2 Medium', sans-serif;
     background: transparent;
-    color: #fff;
+    color: lightgrey;
 }
+
+nav, main, header, .wraper {
+    max-width: 80rem; margin: 0 auto!important;
+}
+
+a {
+    color: white;
+}
+
+/* end - global */
 
 /* header */
 
@@ -63,19 +134,27 @@ header {
     color: white;
 }
 
-.custom-dropdown a:last-child {border-bottom: none;}
+.custom-dropdown a:last-child {
+    border-bottom: none;
+}
 
 nav ul li {
     border-right: 1px solid rgba(0,0,0,0.6);
 }
 
-nav ul li:last-child {border-right: none;}
+nav ul li:last-child {
+    border-right: none;
+}
 
 .nav-item-orange {
     background-color: 	#FA7C0C!important;
 }
 
 /* main */
+
+main {
+    padding: 30px;
+}
 
 .responsive-img {
     width: 100%;
@@ -90,16 +169,96 @@ nav ul li:last-child {border-right: none;}
     margin-bottom: -15px;
 }
 
+.rounded-input {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.submit-section {
+    margin: 80px 10px 10px 10px;
+}
+
+.float-right {
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.horizontal-line {
+ border: none;
+ height: 1px;
+ color: lightgrey;
+ background-color: lightgrey;
+}
+
+/* checkbox */
+input[type=checkbox].css-checkbox {
+    position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:29px;
+    height:24px; 
+    display:inline-block;
+    line-height:24px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:24px;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -24px;
+}
+label.css-label {
+    background-image:url("../images/csscheckbox.png");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}  
+/* end checkbox */
+
 /* footer */
 
-footer {
-    width: 100%;
-    background-color: rgba(87, 86, 86, 0.6);
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
     text-align: center;
 }
 
+/* footer */
+
+.wide-footer {
+    width: 100%;
+    background-color: rgba(87, 86, 86, 0.4);
+    text-align: left;
+    padding: 30px!important;
+    margin: 20px 0 0 0;
+}
+
+.wide-footer ul {
+    list-style-type: none;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(87, 86, 86, 0.8);
+    padding: 0 30px 0 30px;
+}
+
 footer p {
-    text-align: center;
     color: white;
     padding: .75rem 0;
     font-size: .9rem;
@@ -107,6 +266,8 @@ footer p {
 
 /* medium */
 @media only screen and (min-width: 35rem) {
+
+    /* header - medium */
     header {
         zoom: 75%;
         padding: 5px;
@@ -119,10 +280,14 @@ footer p {
     .header-tools {
         display: none;
     }
+    .wide-footer {
+        zoom: 75%;
+    }
 } 
 
 /* large */
 @media only screen and (min-width: 60rem) {
+    /* header - medium */
     header {
         zoom: 100%;
         padding: 5px;
@@ -135,7 +300,13 @@ footer p {
     .header-tools {
         display: block;
     }
+
+    /* nav - large */
     .nav-tools {
         display: none;
+    }
+
+    .wide-footer {
+        zoom: 100%;
     }
 }
